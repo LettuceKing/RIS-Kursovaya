@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Выбор отчета</title>
+    <link type="text/css" rel="stylesheet" href="{{url_for('static', filename='bp_report.css')}}">
+</head>
+
+<body>
+    <div align="center">
+        <h1> Меню работы с отчетами</h1>
+        {% for report in report_list %}
+        <form action="" method="post">
+            <label for="create_rep" class="named_list"> {{report['rep_name']}}</label>
+            <input type="submit" name="create_rep" id="create_rep" value="Создать">
+            <input type="submit" name="view_rep" value="Смотреть">
+        </form>
+        {% endfor %}
+    </div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Супермаркет - Авторизация</title>
+    <link type=" text/css" rel="stylesheet" href="{{url_for('static', filename='bp_auth.css')}}">
+</head>
+
+<body>
+    <h1 align="center"> Введите логин и пароль</h1>
+    <br><br>
+    <div align="center">
+        <form method="POST" action="">
+            <label for="login"> Логин:</label>
+            <br>
+            <input type="text" name="login" id="login">
+            <br>
+            <label for="password"> Пароль: </label>
+            <br>
+            <input type="password" name="password" id="password">
+            <br>
+            <input class="submit" type="submit" value="Отправить">
+        </form>
+        <br><br>
+        <p class="error"> {{ error }} </p>
+        <a href={{url_for('start_func')}}> Вернуться на главную</a>
+    </div>
+</body>
+</html>

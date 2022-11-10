@@ -1,0 +1,13 @@
+{
+  "admin": [
+    "bp_report.start_report",
+    "bp_report.look_report"
+  ],
+  "marketer": [
+    "bp_query",
+    "bp_report"
+  ],
+  "external": [
+    "bp_market"
+  ]
+}

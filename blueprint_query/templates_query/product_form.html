@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Форма запроса</title>
+    <link type=" text/css" rel="stylesheet" href="{{url_for('static', filename='bp_query.css')}}">
+</head>
+
+<body>
+    <div align = center>
+        <h1> Сведения о товаре </h1>
+        <form action="" method ="POST">
+            <label for="product">Введите номер заготовки</label>
+            <input name=blank_id id="product" type="number" placeholder=blank_id>
+            <br><br>
+            <input type=submit value="Отправить">
+        </form>
+        <br>
+        <p class="error"> {{ error }} </p>
+        <br><br>
+        <a href={{url_for('menu_choice')}}> Вернуться к меню </a>
+    </div>
+</body>
+</html>

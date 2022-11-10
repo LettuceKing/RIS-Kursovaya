@@ -1,0 +1,49 @@
+body {
+    background-color: #ffffff;
+}
+
+h1{
+    font-size: 24pt;
+    font-family: "Segoe UI", sans-serif;
+}
+
+.error {
+    font-size: 16pt;
+    color: red;
+    padding: 5px;
+    font-family: "Segoe UI", sans-serif;
+}
+
+a {
+    font-size  : 16pt;
+    font-family: "Segoe UI", sans-serif;
+}
+
+label{
+    font-family: "Segoe UI", sans-serif;
+}
+
+input{
+    font-family: "Segoe UI", sans-serif;
+    box-sizing: border-box;
+    height: auto;
+    padding: 0.375rem 0.75rem;
+    margin: 12px;
+    border: 2px solid #bdbdbd;
+    border-radius: 5px;
+    background-color: white;
+
+}
+
+input[type=submit] {
+    padding: 0.375rem 0.75rem;
+    cursor: pointer;
+    border: 2px solid #bdbdbd;
+    border-radius: 5px;
+    background-color: white;
+
+}
+
+input[type=submit]:hover{
+    background-color: #dadada;
+}

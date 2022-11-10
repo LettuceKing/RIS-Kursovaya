@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Начальная страница</title>
+    <link type=" text/css" rel="stylesheet" href="{{url_for('static', filename='app.css')}}">
+</head>
+
+<body>
+    <h1 align="center"> Информационная система "Супермаркет" </h1>
+    <br><br>
+    <div align="center">
+        <a href="{{url_for('menu_choice')}}"> Меню действий </a>
+        <br><br>
+        <a href={{url_for('exit_func')}}> Выйти из системы </a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,11 @@
+{% extends 'menu/menu_base.html' %}
+
+{% block internal_user_marketer %}
+<h1 align=center> Маркетолог </h1>
+<br><br>
+<div align = center>
+    <a href={{url_for('bp_query.query')}}> Работа с запросами</a>
+    <br><br>
+    <a href={{url_for('bp_report.start_report')}}> Работа с отчетами</a>
+</div>
+{% endblock %}

@@ -1,0 +1,9 @@
+{% extends 'menu/menu_base.html' %}
+
+{% block internal_user_admin %}
+<h1 align = center> Директор </h1>
+<br><br><br>
+<div align = center>
+    <a href={{url_for('bp_report.start_report')}}> Работа с отчетами</a>
+</div>
+{% endblock %}

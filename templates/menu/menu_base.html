@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Выберите действие</title>
+    <link type=" text/css" rel="stylesheet" href="{{url_for('static', filename='app.css')}}">
+</head>
+<body>
+    <div>
+        <h1 align="center"> Вам доступны следующие действия </h1>
+        <br>
+        {% block internal_user_admin %}{% endblock %}
+        {% block internal_user_marketer %}{% endblock %}
+        {% block external_user %}{% endblock %}
+        <br><br><br>
+        <div align="center">
+            <a href={{url_for('start_func')}}> Вернуться на главную</a>
+        </div>
+    </div>
+</body>
+</html>
